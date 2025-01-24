@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "DuetLingo",
+    "version": "1.0",
+    "description": "Instant Language Swap Extension",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+      
+    },
+    "storage": {
+      "sync": {}
+    }
+  }
+  
