@@ -1,9 +1,9 @@
-document.getElementById('swapButton').addEventListener('click', function() {
-    const fromLang = document.getElementById('fromLang').value;
-    const toLang = document.getElementById('toLang').value;
-    
-    // Store selected languages in Chrome storage
-    chrome.storage.sync.set({ fromLang, toLang }, function() {
-      alert("Languages swapped!");
-    });
+document.getElementById("saveLanguages").addEventListener("click", () => {
+  const sourceLang = document.getElementById("sourceLang").value;
+  const targetLang = document.getElementById("targetLang").value;
+
+  chrome.storage.sync.set({ sourceLang, targetLang }, () => {
+    console.log("Languages saved:", sourceLang, targetLang);
+    alert("Languages saved!");
   });
+});
