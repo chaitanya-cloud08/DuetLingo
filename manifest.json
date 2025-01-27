@@ -11,6 +11,16 @@
     }
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/secondicon_16.png",
+      "48": "icons/secondicon_48.png",
+      "128": "icons/secondicon_128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/secondicon_16.png",
+    "48": "icons/secondicon_48.png",
+    "128": "icons/secondicon_128.png"
   }
 }
