@@ -1,3 +1,5 @@
+const configUrl = chrome.runtime.getURL("config.json");
+
 document.addEventListener("keydown", async (event) => {
   if (event.key === "Enter") {
     const selection = window.getSelection().toString().trim();
@@ -6,13 +8,19 @@ document.addEventListener("keydown", async (event) => {
       return;
     }
     console.log("Original Text:", selection);
+
+    const configResponse = await fetch(configUrl);
+    const config = await configResponse.json();
+    const apiUrl = config.API_URL;
+
     chrome.storage.sync.get(["sourceLang", "targetLang"], async (data) => {
-      const sourceLang = data.sourceLang || "en"; 
-      const targetLang = data.targetLang || "en";  
+      const sourceLang = data.sourceLang || "en";
+      const targetLang = data.targetLang || "en";
+
       try {
         const encodedText = encodeURIComponent(selection);
-        const apiUrl = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=${sourceLang}&tl=${targetLang}&q=${encodedText}`;
-        const response = await fetch(apiUrl);
+        const fullApiUrl = `${apiUrl}&sl=${sourceLang}&tl=${targetLang}&q=${encodedText}`;
+        const response = await fetch(fullApiUrl);
         const json = await response.json();
         if (json && json[0]) {
           const translatedText = json[0];
