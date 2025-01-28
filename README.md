@@ -41,16 +41,16 @@ Ensure the following files are in the project folder:
    ```
 3.Enable Developer Mode by toggling the switch in the top-right corner.\
 4.Click on the Load Unpacked button.\
-5.Select the folder containing the DuetLingo files (the folder where you cloned the project in Step 1).\
+5.Select the folder containing the DuetLingo files (the folder where you cloned the project in Step 1).
 
 ## Step 4: Set Up the Extension
 1.After installation, you will see the DuetLingo icon in the Chrome toolbar.\
 2.Click on the icon to open the popup window.\
 3.In the popup, enter the Source Language (e.g., en for English).\
 4.Enter the Target Language (e.g., es for Spanish).\
-5.Click the Save button to save your language preferences.\
+5.Click the Save button to save your language preferences.
 
 ## Step 5: Start Translating
 1.Open any webpage and select the text you wish to translate.\
 2.Press the Enter key on your keyboard.\
-3.The selected text will be instantly replaced with the translated version.\
+3.The selected text will be instantly replaced with the translated version.
