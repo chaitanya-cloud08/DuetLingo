@@ -35,8 +35,9 @@ Ensure the following files are in the project folder:
 ## Step 3: Add the Extension to Chrome
 1.Open Google Chrome.
 2.In the URL bar, go to:
-arduino
-chrome://extensions/
+   ```bash
+   chrome://extensions/
+   ```
 3.Enable Developer Mode by toggling the switch in the top-right corner.
 4.Click on the Load Unpacked button.
 5.Select the folder containing the DuetLingo files (the folder where you cloned the project in Step 1).
