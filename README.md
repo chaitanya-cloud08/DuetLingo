@@ -26,28 +26,29 @@ Follow the steps below to install and use **DuetLingo**:
    cd DuetLingo
 ## Step 2: Prepare the Files
 Ensure the following files are in the project folder:
--manifest.json
--popup.html
--popup.js
--content.js
-An icons folder containing the extension icons (16px, 48px, and 128px).
+- **manifest.json**
+- **popup.html**
+- **popup.js**
+- **content.js**
+- **An icons folder containing the extension icons (16px, 48px, and 128px).**
+
 ## Step 3: Add the Extension to Chrome
--Open Google Chrome.
--In the URL bar, go to:
- ```bash
+1.Open Google Chrome.
+2.In the URL bar, go to:
+arduino
 chrome://extensions/
+3.Enable Developer Mode by toggling the switch in the top-right corner.
+4.Click on the Load Unpacked button.
+5.Select the folder containing the DuetLingo files (the folder where you cloned the project in Step 1).
 
--Enable Developer Mode by toggling the switch in the top-right corner.
--Click on the Load Unpacked button.
--Select the folder containing the DuetLingo files (the folder where you cloned the project in Step 1).
+## Step 4: Set Up the Extension
+1.After installation, you will see the DuetLingo icon in the Chrome toolbar.
+2.Click on the icon to open the popup window.
+3.In the popup, enter the Source Language (e.g., en for English).
+4.Enter the Target Language (e.g., es for Spanish).
+5.Click the Save button to save your language preferences.
 
-**Step 4: Set Up the Extension**
--After installation, you will see the DuetLingo icon in the Chrome toolbar.
--Click on the icon to open the popup window.
--In the popup, enter the Source Language (e.g., en for English).
--Enter the Target Language (e.g., es for Spanish).
--Click the Save button to save your language preferences.
-**Step 5: Start Translating**
--Open any webpage and select the text you wish to translate.
--Press the Enter key on your keyboard.
--The selected text will be instantly replaced with the translated version.
+## Step 5: Start Translating
+1.Open any webpage and select the text you wish to translate.
+2.Press the Enter key on your keyboard.
+3.The selected text will be instantly replaced with the translated version.
