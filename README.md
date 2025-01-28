@@ -34,7 +34,7 @@ Ensure the following files are in the project folder:
 
 ## Step 3: Add the Extension to Chrome
 1.Open Google Chrome.\
-2.In the URL bar, go to:\
+2.In the URL bar, go to:
 
    ```bash
    chrome://extensions/
