@@ -22,7 +22,7 @@ Follow the steps below to install and use **DuetLingo**:
 1. Open your terminal or command prompt.
 2. Clone the repository using the following command:
    ```bash
-   git clone https://github.com/your-username/DuetLingo.git
+   git clone https://github.com/chaitanya-cloud08/DuetLingo.git
    cd DuetLingo
 ## Step 2: Prepare the Files
 Ensure the following files are in the project folder:
